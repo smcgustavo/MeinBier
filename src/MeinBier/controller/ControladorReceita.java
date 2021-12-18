@@ -7,7 +7,7 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 
 public class ControladorReceita {
-    public void criarReceita(ArrayList<Ingrediente> ingredientes, ArrayList<Equipamento> equipamentos, LocalTime tempo, float preco){
-        ReceitaProdutor receita = new ReceitaProdutor(ingredientes, equipamentos, tempo, preco);
+    public ReceitaProdutor criarReceita(String nome, ArrayList<Ingrediente> ingredientes, ArrayList<Equipamento> equipamentos){
+        return new ReceitaProdutor(nome, ingredientes, equipamentos);
     }
 }
